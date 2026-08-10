@@ -1,0 +1,27 @@
+[project]
+name = "quantlab"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "CharlesHo777", email = "jeffbergen@outlook.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.3.0",
+    "jupyterlab>=4.6.3",
+    "matplotlib>=3.11.1",
+    "numpy>=2.5.2",
+    "pandas>=3.0.5",
+    "pyarrow>=25.0.1",
+    "quantstats>=0.0.81",
+    "vectorbt>=1.1.0",
+    "yfinance>=1.5.2",
+]
+
+[project.scripts]
+quantlab = "quantlab:main"
+
+[build-system]
+requires = ["uv_build>=0.12.3,<0.13.0"]
+build-backend = "uv_build"
