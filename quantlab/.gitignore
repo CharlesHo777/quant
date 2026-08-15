@@ -1,0 +1,9 @@
+# ---- Downloaded market data ----
+# Regenerate with: uv run download_data.py
+data/
+*.parquet
+
+# ---- Generated backtest reports ----
+# Regenerate with: uv run momentum_backtest.py
+momentum_report.html
+*_report.html
